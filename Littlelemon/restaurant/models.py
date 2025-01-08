@@ -12,3 +12,9 @@ class Booking(models.Model):
     name = models.CharField(max_length=255)
     no_of_guests = models.IntegerField()
     bookingDate = models.DateTimeField()
+
+class User(models.Model):
+    url = models.CharField(max_length=255)
+    username = models.CharField(max_length=255)
+    email = models.CharField(max_length=255)
+    gropus = models.CharField(max_length=255)
